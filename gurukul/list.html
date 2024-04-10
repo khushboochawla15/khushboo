@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('quiz11.avif')] bg-no-repeat bg-cover bg-fixed bg-center">
+ 
+    <!-- Navbar -->
+    <nav class="bg-[rgba(30,41,59,0.7)] fixed z-20 left-0 right-0 top-0">
+       
+            <div class="flex justify-between mx-auto">
+                <!-- Logo -->
+                   <div class="  flex  justify-center gap-[10px] p-2">
+<div><img class="max-w-[45px]    rounded-full  " src="logo6.jpg"/></div><div><h2 class=" text-[25px] text-[white]  font-bold whitespace-nowrap ">Gurukul-ERP</h2></div>
+</div>
+               
+                <!-- Links -->
+                <div class="hidden lg:inline-flex lg:w-auto mt-2 lg:mt-0 items-center">
+                 <ul class=" flex lg:flex-row text-white  lg:space-x-2 mr-[5px]">
+                    <a href="add.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Add-Questions</li></a>
+                    <a href="list.html" class=""><li class="flex px-4 py-2 font-medium bg-gray-700 rounded-md text-[15px]">Question-List</li></a>
+                    <a href="create.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Create-Quiz</li></a>
+                    <a href="schedule.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Schedule-Quiz</li></a>
+                    <a href="start.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Start-Quiz</li></a>
+                    </ul>
+                </div>
+                <!-- Hamburger -->
+                <div class="flex lg:hidden  items-center justify-center mr-[7px]">
+                    <button id="menu-toggle"
+                        class="text-gray-300 hover:text-white hover:bg-[rgba(255,255,255,0.2)]  focus:bg[rgba(255,255,255,0.5)]  focus:outline-none outline-none inline-flex items-center justify-center border h-10 w-10 rounded-md">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M4 6h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="lg:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+               <ul class=" flex lg:flex-row  flex-col text-white  lg:space-x-2 lg:mr-[5px] space-y-2">
+                    <a href="add.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700  rounded-md text-[18px]">Add-Questions</li></a>
+                    <a href="list.html" class=""><li class="flex px-4 py-2 font-medium  bg-gray-700 rounded-md text-[18px]">Question-List</li></a>
+                    <a href="create.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Create-Quiz</li></a>
+                    <a href="schedule.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Schedule-Quiz</li></a>
+                    <a href="start.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Start-Quiz</li></a>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script> 
+
+<div class="relative left-[0px] mr-[150px] w-[100%] top-[70px] ">
+<div class="flex justify-start py-2 px-4 gap-[25px]">
+<div class=" flex items-center space-x-2 font-bold text-gray-700 lg:text-2xl text-xl ">
+<span class="whitespace-nowrap ">Question-List</span>
+</div>
+<div class=" flex  space-x-4">
+<div class=" flex  mx-auto px-[20px]">
+<input type="text " placeholder="Search Here" class="md:w-[26rem] w-[20rem] bg-gray-100 rounded-lg placeholder:pl-[6px] px-1 py-2 focus:outline-none"/>
+</div>
+</div>
+</div>
+<div class="flex lg:justify-center">
+<div class="py-[30px] mx-[15px] ">
+<div class="flex inline-flex gap-[10px] py-4 whitespace-nowrap px-2 rounded-md bg-red-100 font-bold">
+<div>
+Q1.  
+</div>
+<div class="uppercase">
+which city is known as the pink city of india ?
+</div>
+</div>
+
+<div class="py-[25px]">
+<ul class="uppercase flex md:flex-row flex-col py-[10px] font-bold  gap-[30px]"><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-orange-200 hover:bg-orange-300">jaipur</li><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-green-200 hover:bg-green-300">agra</li></ul>
+<ul class="uppercase flex md:flex-row flex-col py-[10px]  font-bold   gap-[30px]"><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-yellow-100 hover:bg-yellow-200">mumbai</li><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-purple-200 hover:bg-purple-300">kolkata</li></ul>
+</div>
+
+
+<div class="flex inline-flex gap-[10px] py-4 whitespace-nowrap px-2 rounded-md bg-red-100 font-bold">
+<div>
+Q2.  
+</div>
+<div class="uppercase">
+who is known as the father of "indian constitution" ?
+</div>
+</div>
+
+<div class="py-[25px]">
+<ul class="uppercase flex md:flex-row flex-col py-[10px] font-bold  gap-[30px]"><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-orange-200 hover:bg-orange-300">gandhi jii</li><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-green-200 hover:bg-green-300">b.r. ambedkar</li></ul>
+<ul class="uppercase flex md:flex-row flex-col py-[10px]  font-bold  gap-[30px]"><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-yellow-100 hover:bg-yellow-200">j. nehru</li><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-purple-200 hover:bg-purple-300">bhagat singh</li></ul>
+</div>
+</div>
+<div class="flex justify-center items-start py-[40px]">
+<div class=" lg:w-[300px] h-[300px]  w-[200px] h-[200px] rounded-md bg-[rgba(255,255,255,0.5)] shadow-2xl"><div class="px-3 py-4 flex"><img src="filter.png" class="w-[45px] "/><h2 class="font-bold text-2xl px-3 text-gray-100">Filters</h2></div>
+<ul class="px-3 font-bold ">
+<li class="px-4 py-2 my-3  hover:bg-orange-300 rounded-md flex items-center justify-center bg-orange-200">by-class</li>
+<li class="px-4 py-2  my-3  hover:bg-green-300  rounded-md flex items-center justify-center bg-green-200">by-subject</li>
+<li class="px-4 py-2  my-3   hover:bg-purple-300 rounded-md flex items-center justify-center bg-purple-200">sort ass/dsc</li>
+</ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>

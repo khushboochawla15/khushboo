@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('sc2.jpg')] bg-no-repeat bg-cover bg-fixed bg-center">
+ 
+    <!-- Navbar -->
+    <nav class="bg-[rgba(30,41,59,0.7)] fixed z-20 left-0 right-0 top-0">
+       
+            <div class="flex justify-between mx-auto">
+                <!-- Logo -->
+                   <div class="  flex  justify-center gap-[10px] p-2">
+<div><img class="max-w-[45px]    rounded-full  " src="logo6.jpg"/></div><div><h2 class=" text-[25px] text-[white]  font-bold whitespace-nowrap ">Gurukul-ERP</h2></div>
+</div>
+               
+                <!-- Links -->
+                <div class="hidden lg:inline-flex lg:w-auto mt-2 lg:mt-0 items-center">
+                 <ul class=" flex lg:flex-row text-white  lg:space-x-2 mr-[5px]">
+                    <a href="add.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Add-Questions</li></a>
+                    <a href="list.html" class=""><li class="flex px-4 py-2 font-medium hover:bg-gray-700 rounded-md text-[15px]">Question-List</li></a>
+                    <a href="create.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Create-Quiz</li></a>
+                    <a href="schedule.html" class=""><li class="flex px-4 py-2 font-medium   hover:bg-gray-700 rounded-md text-[15px]">Schedule-Quiz</li></a>
+                    <a href="start.html" class=""><li class="flex px-4 py-2 font-medium bg-gray-700 rounded-md text-[15px]">Start-Quiz</li></a>
+                    </ul>
+                </div>
+                <!-- Hamburger -->
+                <div class="flex lg:hidden  items-center justify-center mr-[7px]">
+                    <button id="menu-toggle"
+                        class="text-gray-300 hover:text-white hover:bg-[rgba(255,255,255,0.2)]  focus:bg[rgba(255,255,255,0.5)]  focus:outline-none outline-none inline-flex items-center justify-center border h-10 w-10 rounded-md">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M4 6h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="lg:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+               <ul class=" flex lg:flex-row  flex-col text-white  lg:space-x-2 lg:mr-[5px] space-y-2">
+                    <a href="add.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700  rounded-md text-[18px]">Add-Questions</li></a>
+                    <a href="list.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Question-List</li></a>
+                    <a href="create.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Create-Quiz</li></a>
+                    <a href="schedule.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Schedule-Quiz</li></a>
+                    <a href="start.html" class=""><li class="flex px-4 py-2 font-medium  bg-gray-700 rounded-md text-[18px]">Start-Quiz</li></a>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script> 
+
+<div class="relative left-[0px] mr-[150px] w-[100%] top-[70px] ">
+<div class="flex justify-start py-2 px-4 gap-[25px]">
+<div class=" flex items-center space-x-2 font-bold text-gray-200 lg:text-2xl text-xl ">
+<span class="whitespace-nowrap flex gap-[5px]"><img src="sc4.png" class="w-[40px]"/>Start-Quiz</span>
+</div>
+</div>
+</div>
+<div>
+<div class="py-[50px] flex items-center lg:justify-around justify-start">
+<div class="py-[30px] mx-[15px] ">
+<div class="flex inline-flex gap-[10px] py-4 whitespace-nowrap px-2 rounded-md bg-red-100 font-bold">
+<div>
+Q1.  
+</div>
+<div class="uppercase">
+which city is known as the pink city of india ?
+</div>
+</div>
+<div class="flex">
+<div class="py-[25px]">
+<ul class="uppercase flex md:flex-row flex-col py-[10px] font-bold  gap-[30px]"><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-orange-200 hover:bg-orange-300">jaipur</li><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-green-200 hover:bg-green-300">agra</li></ul>
+<ul class="uppercase flex md:flex-row flex-col py-[10px]  font-bold   gap-[30px]"><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-yellow-100 hover:bg-yellow-200">mumbai</li><li class="w-[150px] h-[40px] flex justify-center items-center rounded-md bg-purple-200 hover:bg-purple-300">kolkata</li></ul>
+</div>
+<div class="lg:hidden block py-[40px] px-[40px]"><img src="sc6.gif" class="w-[200px]"/>
+<span class="flex justify-center items-center py-12 "><button class="px-6 py-3  border hover:bg-green-500 rounded-md bg-green-400 flex justify-center items-center">Submit</button></span>
+</div>
+</div>
+<div>
+<ul class=" font-bold flex flex-row py-6  gap-[25px] text-gray-300">
+<li class="px-4 py-2 my-3 whitespace-nowrap rounded-md flex items-center justify-center bg-gray-700 hover:bg-gray-800 ">previous</li>
+<li class=" py-2 px-4 my-3   rounded-md flex items-center justify-center bg-gray-700 hover:bg-gray-800 ">save & next</li>
+<li class=" py-2  px-4 my-3  rounded-md flex items-center justify-center bg-gray-700 hover:bg-gray-800">next</li>
+<li class=" py-2  px-4 my-3  rounded-md flex items-center justify-center bg-gray-700 hover:bg-gray-800"><a href="dash2.html">exit-quiz</a></li>
+</ul></div>
+
+
+
+<table class="w-full text-sm text-left text-gray-500 ">
+<h3  class="text-gray-200 text-xl font-bold flex-1 p-[15px] ">Question-Numbers</h3>
+        
+<tbody class="font-bold ">
+<tr class="bg-gray-100 border">
+<td class="py-2 px-2 border">1</td>
+<td class="py-2 px-2 border">2</td>
+<td class="py-2 px-2 border">3</td>
+<td class="py-2 px-2  border">4</td>
+</tr>
+
+<tr class="bg-gray-100 border">
+<td class="py-2 px-2 border">5</td>
+<td class="py-2 px-2 border">6</td>
+<td class="py-2 px-2 border">7</td>
+<td class="py-2 px-2 border">8</td>
+</tr>
+
+<tr class="bg-gray-100 border">
+<td class="py-2 px-2 border">9</td>
+<td class="py-2 px-2 border">10</td>
+<td class="py-2 px-2 border">11</td>
+<td class="py-2 px-2 border">12</td>
+</tr>
+
+<tr class="bg-gray-100 border">
+<td class="py-2 px-2 border">13</td>
+<td class="py-2 px-2 border">14</td>
+<td class="py-2 px-2 border">15</td>
+<td class="py-2 px-2 border">16</td>
+</tr>
+
+<tr class="bg-gray-100 border">
+<td class="py-2 px-2 border">17</td>
+<td class="py-2 px-2 border">18</td>
+<td class="py-2 px-2 border">19</td>
+<td class="py-2 px-2 border">20</td>
+</tr>
+
+</table>
+
+
+
+
+
+</div>
+
+<div class="lg:block hidden ">
+<img src="sc6.gif" class="w-[200px]"/>
+<span class="flex justify-center items-center py-12 "><button class="px-6 py-3  border hover:bg-green-500 rounded-md bg-green-400 flex justify-center items-center">Submit</button></span>
+</div>
+
+</div>
+</div>
+</body>
+</html>

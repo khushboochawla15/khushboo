@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200">
+
+    <!-- Navbar -->
+    <nav class="bg-[rgba(30,41,59,0.7)] fixed z-20 left-0 right-0 top-0">
+       
+            <div class="flex justify-between mx-auto">
+                <!-- Logo -->
+                   <div class="  flex  justify-center gap-[10px] p-2">
+<div><img class="max-w-[45px]     rounded-full  " src="logo6.jpg"/></div><div><h2 class=" text-[25px] text-[white]  font-bold whitespace-nowrap ">Gurukul-ERP</h2></div>
+</div>
+               
+                <!-- Links -->
+                <div class="hidden lg:inline-flex lg:w-auto mt-2 lg:mt-0 items-center">
+                 <ul class=" flex lg:flex-row text-white  lg:space-x-2 mr-[5px]">
+                    <a href="add.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700  rounded-md text-[15px]">Add-Questions</li></a>
+                    <a href="list.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Question-List</li></a>
+                    <a href="create.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Create-Quiz</li></a>
+                    <a href="schedule.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Schedule-Quiz</li></a>
+                    <a href="start.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[15px]">Start-Quiz</li></a>
+                    </ul>
+                </div>
+                <!-- Hamburger -->
+                <div class="flex lg:hidden  items-center justify-center mr-[7px]">
+                    <button id="menu-toggle"
+                        class="text-gray-300 hover:text-white hover:bg-[rgba(255,255,255,0.2)]  focus:bg[rgba(255,255,255,0.5)]  focus:outline-none outline-none inline-flex items-center justify-center border h-10 w-10 rounded-md">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M4 6h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="lg:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+               <ul class=" flex lg:flex-row  flex-col text-white  lg:space-x-2 lg:mr-[5px] space-y-2">
+                    <a href="add.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700  rounded-md text-[18px]">Add-Questions</li></a>
+                    <a href="list.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Question-List</li></a>
+                    <a href="create.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Create-Quiz</li></a>
+                    <a href="schedule.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Schedule-Quiz</li></a>
+                    <a href="start.html" class=""><li class="flex px-4 py-2 font-medium  hover:bg-gray-700 rounded-md text-[18px]">Start-Quiz</li></a>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script> 
+
+<div class="bg-transparent">
+
+     <div class="flex items-center justify-center mx-auto max-w-[1170px]">
+<div class="bg-gray-400 rounded-md items-center lg:h-[400px] h-[700px]  shadow-2xl w-[80%] absolute top-[140px] bottom-[140px] px-[15px] mx-auto">
+
+<div class="flex items-center justify-center pt-4"><h2 class="uppercase md:text-3xl text-2xl text-white font-extrabold text-center mt-4">welcome to gurukul-erp quiz!!</h2></div>
+<div class="flex lg:flex-row flex-col justify-center gap-[20px] py-[50px]">
+<div class="flex justify-center items-center  lg:pb-[100px]  "><img src="quiz4.jpg" class="w-contain rounded-md border "></div>
+<div class="flex flex-col justify-center items-center pb-[100px] pt-[40px]">
+<p class="md:text-[18px] text-[15px] text-white font-medium">Here you can create your own quiz, schedule a quiz,<br> play a quiz and edit your quiz in more effective <br>and easy way in just few minutes.<br> Click on 'Create' button to  create your own quiz.</p>
+<span class= "py-6 "><button class="py-3 px-6  hover:bg-gray-800 text-white bg-gray-700  font-bold rounded-md"><a href="add.html">Create</a></button></span>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
